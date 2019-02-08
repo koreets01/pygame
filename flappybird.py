@@ -52,3 +52,4 @@ sounds['hit'] = pygame.mixer.Sound('data/hit' + soundExt)
 sounds['point'] = pygame.mixer.Sound('data/point' + soundExt)
 sounds['swoosh'] = pygame.mixer.Sound('data/swoosh' + soundExt)
 
+лл
