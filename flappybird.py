@@ -52,3 +52,18 @@ sounds['hit'] = pygame.mixer.Sound('data/hit' + soundExt)
 sounds['point'] = pygame.mixer.Sound('data/point' + soundExt)
 sounds['swoosh'] = pygame.mixer.Sound('data/swoosh' + soundExt)
 
+running = True
+
+while running:
+    images['background_type'] = pygame.image.load(background).convert()
+
+    images['player_type'] = pygame.image.load(bird).convert_alpha()
+
+    images['pipe_type'] = pygame.image.load(pipe).convert_alpha()
+
+    HITMASKS['pipe_type'] = (
+        getHitmask(images['pipe_type']))
+
+
+    HITMASKS['player_type'] = (
+        getHitmask(images['player_type']))
